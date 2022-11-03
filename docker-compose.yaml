@@ -6,7 +6,7 @@ services:
       - 3000:80
 
   backend:
-    image: test:latest
+    image: mshallom/stage2_backend:latest
     ports:
       - "8000:8000"
     command: python manage.py runserver 0.0.0.0:8000
