@@ -2,6 +2,8 @@ version: '3'
 services:
   frontend:
     image: mshallom/stage2_frontend:latest
+    depends_on:
+      - backend
     ports:
       - 3000:80
 
