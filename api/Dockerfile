@@ -1,6 +1,10 @@
 ## find a way to install libpq-dev and python3-dev on the machines
 FROM python:3.9-alpine
 
+ENV PYTHONDONTWRITEBYTECODE 1
+
+ENV PYTHONBUFFERED=1
+
 RUN mkdir /backend
 
 COPY . /backend/
