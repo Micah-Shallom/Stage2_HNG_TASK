@@ -1,5 +1,12 @@
 version: '3'
 services:
+  proxy:
+    build: .
+    depends_on: 
+      - frontend
+    ports:
+      - 80:80
+
   frontend:
     image: mshallom/stage2_frontend:latest
     depends_on:
